@@ -27,10 +27,10 @@ class User
 
 class Customer extends User
 {
-  public function sayParent()
-  {
-    return $this->sayPrivate();
-  }
+  // public function sayParent()
+  // {
+  //   return $this->sayPrivate();
+  // }
 }
 
 $u = new User;
@@ -43,7 +43,7 @@ $u->lastName = "Class";
 echo $u->fullname() . "<br/>";
 // echo $u->sayProtect() . "<br/>";
 // echo $u->sayPrivate() . "<br/>";
-echo $u->sayPrivate() . "<br/>";
+// echo $u->sayPrivate() . "<br/>";
 
 // $customer1 = new Customer();
 // $customer1->firstName = "John";
